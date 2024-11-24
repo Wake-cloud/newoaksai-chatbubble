@@ -1,0 +1,30 @@
+/* Cyberpunk Neon Glow Effect */
+.chatbot-textarea {
+    font-family: 'Noto Sans', sans-serif;
+    color: #00ffff;  /* Neon Cyan text */
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    border: 2px solid rgba(0, 255, 255, 0.8);  /* Neon border */
+    padding: 10px;
+    resize: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Focused textarea with glowing border */
+  .chatbot-textarea:focus {
+    outline: none;
+    border: 2px solid #00ffff;  /* Bright neon cyan */
+    box-shadow: 0 0 10px 3px rgba(0, 255, 255, 1);
+  }
+  
+  /* Optional glowing text cursor */
+  .chatbot-textarea::selection {
+    background: rgba(0, 255, 255, 0.3);  /* Neon Cyan selection */
+    color: black;
+  }
+  
+  /* Smooth transition for height resizing */
+  .chatbot-textarea {
+    transition: height 0.3s ease;
+  }
+  

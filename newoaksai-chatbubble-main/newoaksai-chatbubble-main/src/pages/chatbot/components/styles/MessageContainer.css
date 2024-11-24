@@ -1,0 +1,19 @@
+
+.message-container {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 255, 255, 0.8) transparent; /* Neon cyan scrollbar */
+  }
+  
+  .message-container::-webkit-scrollbar {
+    width: 8px; /* Slim scrollbar */
+  }
+  
+  .message-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 255, 255, 0.8); /* Neon cyan thumb */
+    border-radius: 5px;
+  }
+  
+  .message-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  

@@ -1,0 +1,32 @@
+
+.sendMessage-container {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  /* Neon glow effect */
+  .hover\:shadow-glow:hover {
+    box-shadow: 0 0 10px 3px rgba(0, 255, 255, 1), 0 0 15px 5px rgba(255, 0, 255, 0.7);
+    transform: scale(1.1); /* Increase size on hover */
+  }
+  
+  /* Sharp edges on icon */
+  svg {
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Animation for smooth transition */
+  @keyframes neonGlow {
+    0% {
+      text-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1);
+    }
+    100% {
+      text-shadow: 0 0 10px rgba(255, 0, 255, 0.7), 0 0 20px rgba(255, 0, 255, 1), 0 0 30px rgba(255, 0, 255, 1);
+    }
+  }
+  
+  svg:hover {
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+  }
+  
